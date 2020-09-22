@@ -24,7 +24,13 @@ function userPrompt() {
   
   // Checks if at least one of the character options were chosen
   if ( hasUpper == true  || hasLower == true  || hasNumber == true  || hasSymbol == true ) {
-    generatePassword(finalCharSet, isLength)
+    if ( isLength >= 8 && isLength <= 128 ){
+      generatePassword(finalCharSet, isLength)
+    } else {
+      alert('Please choose between 8 and 128 characters');
+      userPrompt()
+    }
+
   } else {
     alert('Please select at lease ONE option');
     userPrompt()
