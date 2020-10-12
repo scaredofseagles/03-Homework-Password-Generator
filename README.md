@@ -65,7 +65,7 @@ generateBtn.addEventListener("click", userPrompt);
 
 ## URL
 
-See the web application [here](https://scaredofseagles.github.io/03-Homework-Password-Generator/)
+See the web application [here](https://scaredofseagles.github.io/Simple-Password-Generator/)
 
 ## License
 
